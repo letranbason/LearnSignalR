@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignalR Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #messagesList {
+            list-style: none;
+            padding: 0;
+        }
+
+            #messagesList li {
+                padding: 5px;
+                border-bottom: 1px solid #ddd;
+            }
+    </style>
+</head>
+<body>
+    <h1>Chat Application</h1>
+    <ul id="messagesList"></ul>
+    <input id="userInput" type="text" placeholder="Your name" />
+    <input id="messageInput" type="text" placeholder="Your message" />
+    <button id="sendButton">Send</button>
+    <script src="chat.js"></script>
+</body>
+</html>
