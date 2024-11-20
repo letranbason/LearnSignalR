@@ -8,5 +8,11 @@ namespace ServerApp.Hubs
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
+
+        public async Task SendEmojiReaction(string user, string emoji)
+        {
+            await Clients.All.SendAsync("ReceiveMessage", user, emoji);
+        }
     }
 }
+

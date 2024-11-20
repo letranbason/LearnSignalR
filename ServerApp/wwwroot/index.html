@@ -20,14 +20,61 @@
                 padding: 5px;
                 border-bottom: 1px solid #ddd;
             }
+
+        .alert-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .alert-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+            .alert-box button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+                .alert-box button:hover {
+                    background-color: #0056b3;
+                }
     </style>
 </head>
 <body>
     <h1>Chat Application</h1>
-    <ul id="messagesList"></ul>
-    <input id="userInput" type="text" placeholder="Your name" />
-    <input id="messageInput" type="text" placeholder="Your message" />
-    <button id="sendButton">Send</button>
+    <div>
+        <ul id="messagesList"></ul>
+        <input id="userInput" type="text" placeholder="Your name" />
+        <input id="messageInput" type="text" placeholder="Your message" />
+        <button id="sendButton">Send</button>
+        <button class="emojiButton">😀</button>
+        <button class="emojiButton">😂</button>
+        <button class="emojiButton">😎</button>
+        <button class="emojiButton">😡</button>
+    </div>
+    <div id="alertOverlay" class="alert-overlay">
+        <div class="alert-box">
+            <p>Tell me your name!</p>
+            <button id="closeAlert">OK</button>
+        </div>
+    </div>
     <script src="chat.js"></script>
 </body>
 </html>

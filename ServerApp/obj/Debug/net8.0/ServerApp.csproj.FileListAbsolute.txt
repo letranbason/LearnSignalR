@@ -43,3 +43,4 @@ C:\Users\Admin\source\repos\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.pdb
 C:\Users\Admin\source\repos\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.genruntimeconfig.cache
 C:\Users\Admin\source\repos\ServerApp\ServerApp\obj\Debug\net8.0\ref\ServerApp.dll
 C:\Users\Admin\source\repos\ServerApp\ServerApp\bin\Debug\net8.0\ServerApp.staticwebassets.runtime.json
+C:\Users\Admin\source\repos\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.sourcelink.json
